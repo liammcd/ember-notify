@@ -78,6 +78,10 @@ export default Component.extend({
         this.parentView.messages.removeObject(this.message);
         this.set('message.visible', null);
       }
+    },
+
+    click() {
+      this.onClick();
     }
   },
 

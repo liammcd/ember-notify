@@ -3,5 +3,5 @@
 {{else}}
   <a {{action "close"}} class="close" role="button">&times;</a>
   {{!-- template-lint-disable no-triple-curlies --}}
-  <span class="message">{{message.text}}{{{message.html}}}</span>
+  <a {{action "click"}}><span class="message">{{message.text}}{{{message.html}}}</span></a>
 {{/if}}
